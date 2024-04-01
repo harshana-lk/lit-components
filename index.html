@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <!-- <link rel="stylesheet" href="./src/index.css" /> -->
+    <script type="module" src="/src/my-panel-lit.ts"></script>
+  </head>
+  <body>
+    <my-panel-lit title="Hello" icon="👋">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+      itaque expedita impedit voluptatibus molestias earum praesentium
+      blanditiis ab? Ex distinctio temporibus, laudantium dolore earum omnis
+      commodi iste. Esse, fuga maxime!
+    </my-panel-lit>
+
+    <script>
+      const el = document.querySelector("task-manager-lit");
+      el.addEventListener("icon-click", (e) => {
+        console.log("Do something!");
+      });
+    </script>
+  </body>
+</html>
